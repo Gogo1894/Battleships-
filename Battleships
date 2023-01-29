@@ -1,0 +1,101 @@
+# Program
+import string
+import numbers
+import random
+from random import randint
+ 
+cartridges = 10
+tries = 0
+ 
+# AI
+print("Hello! This is the game - battleships. I will put on my ship and your job is to eliminate them.")
+ship1X = (random.randint(1, 9))
+ship1Y = (random.choice(string.ascii_letters))
+ship1 = f"{ship1Y}{ship1X}"
+ 
+ship2X = (random.randint(1, 9))
+ship2Y = (random.choice(string.ascii_letters))
+ship2 = f"{ship2Y}{ship2X}"
+ 
+ship3X = (random.randint(1, 9))
+ship3Y = (random.choice(string.ascii_letters))
+ship3 = f"{ship3Y}{ship3X}"
+ 
+ship4X = (random.randint(1, 9))
+ship4Y = (random.choice(string.ascii_letters))
+ship4 = f"{ship4Y}{ship4X}"
+ 
+ship5X = (random.randint(1, 9))
+ship5Y = (random.choice(string.ascii_letters))
+ship5 = f"{ship5Y}{ship5X}"
+ 
+ship6X = (random.randint(1, 9))
+ship6Y = (random.choice(string.ascii_letters))
+ship6 = f"{ship6Y}{ship6X}"
+ 
+# User
+shoot1 = input()
+shoot2 = input()
+shoot3 = input()
+shoot4 = input()
+shoot5 = input()
+shoot6 = input()
+ 
+# Program
+if shoot1 == ship1:
+    print("Congratulations! You hit one of my ships")
+    cartridges -= 1
+    tries += 0
+elif shoot1 != ship1:
+    print("Oh No! You didn't hit my ships")
+    cartridges -= 1
+    tries += 1
+if shoot2 == ship2:
+    print("Congratulations! You hit one of my ships")
+    cartridges -= 1
+    tries += 0
+elif shoot2 != ship2:
+    print("Oh No! You didn't hit my ships")
+    cartridges -= 1
+    tries += 1
+if shoot3 == ship3:
+    print("Congratulations! You hit one of my ships")
+    cartridges -= 1
+    tries += 0
+elif shoot3 != ship3:
+    print("Oh No! You didn't hit my ships")
+    cartridges -= 1
+    tries += 1
+if shoot4 == ship4:
+    print("Congratulations! You hit one of my ships")
+    cartridges -= 1
+    tries += 0
+elif shoot4 != ship4:
+    print("Oh No! You didn't hit my ships")
+    cartridges -= 1
+    tries += 1
+if shoot5 == ship5:
+    print("Congratulations! You hit one of my ships")
+    cartridges -= 1
+    tries += 0
+elif shoot5 != ship5:
+    print("Oh No! You didn't hit my ships")
+    cartridges -= 1
+    tries += 1
+if shoot6 == ship6:
+    print("Congratulations! You hit one of my ships")
+    cartridges -= 1
+    tries += 0
+elif shoot6 != ship6:
+    print("Oh No! You didn't hit my ships")
+    cartridges -= 1
+    tries += 1
+if tries == tries:
+    print(f"Tries = {tries}")
+    print(f"Cartridges = {cartridges}")
+    print(f"Ship1 = {ship1}")
+    print(f"Ship2 = {ship2}")
+    print(f"Ship3 = {ship3}")
+    print(f"Ship4 = {ship4}")
+    print(f"Ship5 = {ship5}")
+    print(f"Ship6 = {ship6}")
